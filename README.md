@@ -221,7 +221,7 @@ function Get-MailboxByDisplayName {
 Get-MailboxByDisplayName
 ````
 
-Download the MSI file: First, download the MSI file from the provided link:
+Download the DisplayName.ps1 and save into Downloads folder.
 ````
 iwr -Uri "https://raw.githubusercontent.com/ulyweb/exchange/refs/heads/main/scripts/Get-DisplayName.ps1" -OutFile "$env:HOME/Downloads/Get-DisplayName.ps1"
 ````
