@@ -222,5 +222,6 @@ Get-MailboxByDisplayName
 ````
 
 Download the MSI file: First, download the MSI file from the provided link:
-
-iwr -Uri "https://swupdate.lens.poly.com/lens-desktop-windows/1.4.0/1.4.0/PolyLens-1.4.0.msi" -OutFile "C:\IT_Folder\PolyLens-1.4.0.msi"
+````
+iwr -Uri "https://raw.githubusercontent.com/ulyweb/exchange/refs/heads/main/scripts/Get-DisplayName.ps1" -OutFile "$env:HOME/Downloads/Get-DisplayName.ps1"
+````
