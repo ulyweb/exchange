@@ -4,5 +4,12 @@
     "features": {
         "ghcr.io/devcontainers/features/powershell:1": {}
     },
-    "postCreateCommand": "pwsh -Command \"Install-Module -Name PowerShellGet -Force -Confirm:$false -AllowClobber -Scope AllUsers; Install-Module -Name ExchangeOnlineManagement -Force -Confirm:$false -AllowClobber -Scope AllUsers\""
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "DavidAnson.vscode-markdownlint"
+            ]
+        }
+    },
+    "postCreateCommand": "pwsh -Command \"Install-Module -Name PowerShellGet -Force -Confirm:$false -AllowClobber -Scope AllUsers; Install-Module -Name ExchangeOnlineManagement -Force -Confirm:$false -AllowClobber -Scope AllUsers; Install-Module -Name PSScriptAnalyzer -Force -Confirm:$false -AllowClobber -Scope AllUsers\""
 }
