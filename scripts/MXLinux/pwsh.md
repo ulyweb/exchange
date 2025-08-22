@@ -92,3 +92,50 @@ Once the installation is complete, you can verify that PowerShell is installed a
     ```
 
 You now have PowerShell installed and ready to use on your MX Linux system\!
+
+
+
+## **How to Run on macOS/Linux**
+1. **Ensure PowerShell Core (pwsh) is installed**  
+   - macOS: `brew install powershell`  
+   - Linux: `sudo apt install powershell -y` (Debian/Ubuntu)  
+   - Fedora: `sudo dnf install powershell -y`  
+
+2. **Run Powershell**  
+   - macOS: `pwsh`  
+   - Linux: `powershell` (Debian/Ubuntu)  
+
+3. **Install Required Modules** (Install a module only for the current user)
+   - `Install-Module ExchangeOnlineManagement -Scope CurrentUser`  
+   - `Install-Module MSOnline -Scope CurrentUser`
+     
+✅ **Find and install a module** 
+✅ **This example finds a module in the repository and installs the module**
+   - `Find-Module -Name PowerShellGet | Install-Module`
+
+✅ ***The Find-Module uses the Name parameter to specify the PowerShellGet module. By default, the newest version of the module is downloaded from the repository. The object is sent down the pipeline to the Install-Module cmdlet. 
+Install-Module installs the module for all users in $env:ProgramFiles\PowerShell\Modules.***
+
+✅ **Other useful module to be install**
+   - `Install-Module -Name PSWindowsUpdate -Scope CurrentUser`
+   - `Install-Module -Name Az.Accounts -Scope CurrentUser` 
+   - `Install-Module -Name DellBIOSProvider -Scope CurrentUser`
+
+
+4. **Connecting Online**  
+   - `Connect-ExchangeOnline -UserPrincipalName "Full.email.address@domain.com"`
+
+4. **Run the Script**  
+   - Save the script as `ExchangeMenu.ps1`  
+   - Open Terminal & run:  
+     ```bash
+     pwsh ExchangeMenu.ps1
+     ```
+
+---
+
+## **This Works on macOS & Linux**
+✅ **Uses PowerShell Core (`pwsh`)**  
+✅ **Provides a Text-Based Menu**  
+✅ **Works in Any Terminal**  
+
