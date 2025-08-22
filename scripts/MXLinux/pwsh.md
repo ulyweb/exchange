@@ -1,4 +1,4 @@
-I can help with that\! Here are the step-by-step instructions for installing PowerShell on MX Linux using the terminal.
+Here are the step-by-step instructions for installing PowerShell on MX Linux using the terminal.
 
 ### Prerequisites
 
