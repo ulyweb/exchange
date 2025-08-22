@@ -95,17 +95,15 @@ You now have PowerShell installed and ready to use on your MX Linux system\!
 
 
 
-## **How to Run on macOS/Linux**
+## **How to Run and Install on Linux**
 1. **Ensure PowerShell Core (pwsh) is installed**  
-   - macOS: `brew install powershell`  
    - Linux: `sudo apt install powershell -y` (Debian/Ubuntu)  
    - Fedora: `sudo dnf install powershell -y`  
 
-2. **Run Powershell**  
-   - macOS: `pwsh`  
-   - Linux: `powershell` (Debian/Ubuntu)  
+2. **Run Powershell**    
+   - Linux: `pwsh` (Debian/Ubuntu)  
 
-3. **Install Required Modules** (Install a module only for the current user)
+3. **Install Required Modules** (Install a module only for the current user) Please run the process as non-sudo user.
    - `Install-Module ExchangeOnlineManagement -Scope CurrentUser`  
    - `Install-Module MSOnline -Scope CurrentUser`
      
@@ -123,7 +121,7 @@ Install-Module installs the module for all users in $env:ProgramFiles\PowerShell
 
 
 4. **Connecting Online**  
-   - `Connect-ExchangeOnline -UserPrincipalName "Full.email.address@domain.com"`
+   - `Connect-ExchangeOnline
 
 4. **Run the Script**  
    - Save the script as `ExchangeMenu.ps1`  
@@ -132,10 +130,4 @@ Install-Module installs the module for all users in $env:ProgramFiles\PowerShell
      pwsh ExchangeMenu.ps1
      ```
 
----
-
-## **This Works on macOS & Linux**
-✅ **Uses PowerShell Core (`pwsh`)**  
-✅ **Provides a Text-Based Menu**  
-✅ **Works in Any Terminal**  
 
