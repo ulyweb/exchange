@@ -2,7 +2,14 @@
 > # Exchange Online
 
 > [!IMPORTANT]
->>
+>>> Install the requirement below first 
+````
+Find-Module -Name PowerShellGet | Install-Module -Confirm:$false
+Find-Module -Name MSOnline | Install-Module -Confirm:$false
+Find-Module -Name PSWindowsUpdate | Install-Module -Confirm:$false
+Find-Module -Name ExchangeOnlineManagement | Install-Module -Confirm:$false
+Import-Module ActiveDirectory 
+````
 
 ## **1. Mailbox Permissions (`MailboxPermission`)**
 **Purpose:**
