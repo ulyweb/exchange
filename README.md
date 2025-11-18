@@ -4,10 +4,10 @@
 > [!IMPORTANT]
 >>> Install the requirement below first 
 ````
-Find-Module -Name PowerShellGet | Install-Module -Confirm:$false
-Find-Module -Name MSOnline | Install-Module -Confirm:$false
-Find-Module -Name PSWindowsUpdate | Install-Module -Confirm:$false
-Find-Module -Name ExchangeOnlineManagement | Install-Module -Confirm:$false
+Find-Module -Name PowerShellGet | Install-Module -AllowClobber -AcceptLicense:$true -Confirm:$false
+Find-Module -Name MSOnline | Install-Module -AllowClobber -AcceptLicense:$true -Confirm:$false
+Find-Module -Name PSWindowsUpdate | Install-Module -AllowClobber -AcceptLicense:$true -Confirm:$false
+Find-Module -Name ExchangeOnlineManagement | Install-Module -AllowClobber -AcceptLicense:$true -Confirm:$false
 Import-Module ActiveDirectory 
 ````
 
